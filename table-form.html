@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" type="text/css" href="css/styletabla.css">
+</head>
+
+
+<body>
+    
+
+<!-- Elementos: caption,table, thead, th, tr, td, tbody, tfoot -->
+<!-- Atributos: scope, colspan, rowspan, header-->
+
+<table>
+    <caption>Lista de clientes</caption>
+   
+        <thead>
+
+            <tr>
+                <th scope="col" rowspan="2">Código</th>
+                <th scope="col" colspan="3" id="datos">Datos Personales</th>
+            </tr>
+
+
+            <tr>
+                <th scope="col" header="datos">Nombre</th>
+                <th scope="col" header="datos">Apellido</th>
+                <th scope="col" header="datos">Email</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>chepe</td>
+                <td>castillo</td>
+                <td>jadan_castillo@hotmail.com</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>chepe</td>
+                <td>castillo</td>
+                <td>jadan_castillo@hotmail.com</td>
+            </tr>
+
+            </tr>
+                <td>3</td>
+                <td>chepe</td>
+                <td>castillo</td>
+                <td>jadan_castillo@hotmail.com</td>
+                </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td></td>
+                <td></td>
+                <td>3</td>
+            </tr>
+        </tfoot>    
+
+</table>
+
+</body>
+</html>

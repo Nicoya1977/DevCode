@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases, Formularios</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    
+<h1 class="pseudoclases"> PseudoClases </h1>
+
+        <a href="https://univision.com" target="blank"> Ejemplo de Pseudoclases :link   &   :visited</a>
+
+
+        <h1> Pseudo Clases :hover,  :active,  :focus</h1>
+
+        <form action="login.php" method="POST">
+
+            <fieldset>
+                    <legend>Datos Personales</legend>
+
+                      Nombres: <input type="text">
+                      Apellidos: <input type="text">
+                      <input type="submit" value="ENVIAR">
+                        <br><br>
+
+                     <textarea></textarea>
+
+            </fieldset>
+
+       
+        </form>
+<br><br>
+
+
+ <!-- Maneras de utilizar el Elemento "Label" junto con "input" -->
+<form>
+        <fieldset> <!--Con el atributo "disabled" de "fielset" hacemos que los input esten desactivados.-->
+
+                <legend>Informacion</legend>
+        <p>     
+                <label>
+                        Nombres:
+                        <input type="text">    <!-- Recibi el foco al hacer click en el Label-->
+                </label>
+        </p>
+
+        <p>
+                <label>Apellidos:</label>       <!-- No recibe el foco porque Label esta por arriba de input-->
+                <input type="text">
+        </p>
+
+        <p>
+                <label for="direccion"> Direccion:</label> <!-- Recibe el foco a traves de los ID-->
+                <input type="text" id="direccion">
+        </p>
+                
+        <!-- Los Elementos Label, input tienen la propiedad Display=inline, entonces para poder generar una separaicion
+         aplicaremos Elemento "p" como contenedores, y asi pueda verse por separados -->
+
+
+        </fieldset>
+</form>
+
+<br><br><br>
+
+
+        <ul>        
+                <li>Chepe</li>
+                <li>Carlos</li>
+                <li>Dago</li>
+                <li>Mama</li>           
+                <li>Papa</li>
+         
+        </ul>
+
+
+        <p>
+        First-line y first-letter.  <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate maiores recusandae consectetur repellat et quod, numquam repellendus, <br>
+        sequi provident vel eligendi nostrum harum quasi adipisci sit placeat! Repudiandae, temporibus?
+        </p>
+
+<!--Combinacion de Selectores #14-->
+
+        <ul>
+                <li>Objeto1</li>
+                <li>Objeto2</li>
+                        <ol>
+                                <li>Objeto anidado 1</li>
+                                <li>Objeto anidado 2</li>
+                        </ol>
+                <li>Objeto3</li>
+        </ul>
+
+        <div class="colorrgb">
+                Color RGB
+        </div>
+
+        <div class="colorrgba">
+                Color RGBA
+        </div>
+
+        
+        <div class="colorhsl">
+                Color HSL
+        </div>
+
+        <div class="colorhsla">
+                Color HSLA
+        </div>
+        
+
+
+        <h2>Unidades de longitud absolutas</h2>
+        <div class="pulgadas">Pulgada</div>
+        <div class="centimetros">Centimetro</div>
+        <div class="picas">Pica</div>
+        <div class="milimetros">Milimetro</div>
+        <div class="puntos">Punto</div>
+        <div class="pixeles">Pixel</div>
+
+        <h2>Unidades de longitud relativas</h2>
+        <span class="unidadrem">rem</span>
+
+        <div class="caja1">50</div>
+
+        <div class="caja2">Tamaño de fuente heredado</div>
+
+
+         
+        <!-- Porcentajes  --> 
+        
+          
+                <div class="level1">
+                        <div class="level2">              
+                                20px
+                        </div>
+                       40px
+                </div>
+        
+
+        
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+*{
+    box-sizing: border-box; /* Esto es para que el width:350 lateral no varia debido al usar padding:1em*/
+}
+
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+.lateral{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    padding: 1em;
+    width:350px;
+    background-color: #56b3ab;
+}
+
+.perfil__circulo{
+    width: 50px;
+    height: 50px;
+    overflow:hidden;
+    border-radius:50%;
+    margin: 0;
+    
+}
+
+.perfil__foto{
+    width:100%;
+}
+
+.perfil__nombres{
+    color: #fff;
+    font-size:20px;
+    width: 250px;
+    margin-left:0.5 em;
+}
+
+.perfil__circulo, .perfil__nombres{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.informacion{
+    color:#0F6A62;
+    position: absolute;
+    bottom: 1em;
+}
+
+.informacion__titulo{
+    font-size: 18px;
+
+}
+
+.habilidad{
+    background-color: #0F6A62;
+    color:#fff;
+    font-size: 12px;
+    display:inline-block;
+    padding: .5em;
+    text-transform: uppercase;
+}
+
+.habilidades{
+    padding: 0.5em;    
+
+}
+
+
+/* Proyectos*/
+
+.proyectos{
+    margin-left: 350px;
+    padding: 1em;
+    display: table;
+}
+
+.proyecto{
+    width: 50%;
+    display: table-cell;
+    
+    padding:1em;
+}
+
+.proyecto_imagen{
+    width: 100%;
+
+}
+
+.proyecto_titulo{
+    color: #29597C;
+    font-size: 18px;
+}
+
+.habilidad--proyecto{
+    background-color: #29597C;
+    color:#fff;
+    font-size: 12px;
+    display:inline-block;
+    padding: .5em;
+    text-transform: uppercase;
+
+}
+
+.proyecto_descripcion{
+    color: #797D7F;
+
+}

@@ -1,0 +1,17 @@
+table{
+    font-size: 24px;
+    border: 1px solid black;
+    border-collapse:separate;
+    border-spacing: 10px;
+    empty-cells: hide; /* Esta propiedad solo funciona si la "border-collapse: separate;*/
+    caption-side: bottom;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Si la propiedad border-collapse:separate, entonces no funciona la propiedad border para "tr"
+
+*/  

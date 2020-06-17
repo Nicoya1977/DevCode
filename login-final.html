@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+    <link rel="stylesheet" type="text/css" href="CSS/styleFormFinal.css">
+
+
+</head>
+
+
+<body>
+    
+      
+
+ <!-- Maneras de utilizar el Elemento "Label" junto con "input" -->
+<form action="login.php" method="POST">
+        <fieldset> <!--Con el atributo "disabled" de "fielset" hacemos que los input esten desactivados.-->
+
+                <legend>Login</legend>
+
+                            <input type="email" id="email" name="e" placeholder="Email" autocomplete="off" autofocus required>    <!-- Recibi el foco al hacer click en el Label-->
+                            <input type="password" id="password" name="p" placeholder="Password"> <!-- Placeholder es para mostrar en el input contenido referente a lo necesario introducir-->
+                            <input type="submit" value="Login" id="boton">
+                    
+        <!-- Los Elementos Label, input tienen la propiedad Display=inline, entonces para poder generar una separaicion
+         aplicaremos Elemento "p" como contenedores, y asi pueda verse por separados -->
+
+         <!--Lo otro que se puede hacer es: eliminar los elemento "p", despues en la hoja style cambiar su propiedades
+         display:block.    -->
+
+
+        </fieldset>
+</form>
+
+
+</body>
+</html>

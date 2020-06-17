@@ -1,0 +1,351 @@
+a:link{
+    color:yellow;
+}
+
+a:visited{
+    color:gold;
+}
+
+legend:hover{
+    color:red;
+}
+
+legend:active{
+    color:blue;
+}
+
+input:focus{
+    color:orange;
+}
+
+textarea:focus{
+    color:brown;
+}
+
+/*  Aplicando comentario para Desactivar las PseudoClases de abajo descritas
+
+li:first-child{
+    background: yellow;
+    
+}
+
+li:last-child{
+    background:greenyellow;
+}
+
+li:nth-child(2n){
+    background:orange;
+}
+
+li:nth-child(3n){
+    background: pink;
+}
+
+*/
+
+
+.pseudoclases{
+    text-align: center;
+}
+
+body{
+    background: #2c3e50;
+    margin:30px 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+
+/*PseudoElementos*/
+h1::before{
+    content: "BEFORE_";
+    background: orangered;
+}
+
+h1::after{
+    content: "_AFTER";
+    background: orangered;
+}
+
+p::first-letter{
+    font-size: 36px;
+    color:gold;
+}
+
+p::first-line{
+    color:gray;
+}
+
+/* Combinando Selectores Capitulo #14, utilizando 4 maneras: >, +, ~ */
+ul li{
+    margin-left: 40px;
+    
+}
+
+/*  Colores, Capitulo #16, utilizando funciones (rgb,rgba) valores van de 0-255, y para "a" entre 0-1. 
+(HSL, HSLa) los valores para matiz "H"  0-359, para Saturacion y Brillo van del 0%-100% */
+
+/*  Sitios Web para conocer mas sobre colores: https://www.color-hex.com/   https://flatuicolors.com/
+ https://color.adobe.com/create/color-wheel */
+
+.colorrgb{
+    color:rgb(255,0,0);
+}
+
+.colorrgba{
+    color:rgba(0,0,255,0.5);
+}
+
+.colorhsl{
+    color:hsl(120,100%,50%);
+}
+
+.colorhsla{
+    color:rgba(255, 174, 0, 0.5);
+}
+
+/* Longitudes absolutas  */
+
+div{
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    overflow: visible;
+}
+
+.pulgadas{
+    width: 7in;
+    background: green;
+}
+
+.centimetros{
+    width: 7cm;
+    background:gold;
+}
+
+.picas{
+    width:7pc;
+    background: olive;
+}
+
+.milimetros{
+    width: 7mm;
+    background: red;
+}
+
+.puntos{
+    width: 7pt;
+    background: blue;
+}
+ 
+.pixeles{
+    width:7px;
+    background: purple;
+}
+
+
+/*  Longitudes Relativas:  em, rem, ex, ch*/
+
+.unidadrem{
+    color:crimson;
+    font-size: 4rem;
+    
+}
+
+.caja1{
+    background: green;
+    font-size: 50px;
+    height: 50px;
+    width:4em;
+}
+
+.caja2{
+    font-size:20px;
+    
+}
+
+/* APLICANDO PORCENTAJE */
+.level1{
+    width: 400px;
+    height: 400px;
+    font-size: 80px;
+    background: red;
+}
+
+.level2{
+    width:50%;
+    height: 50%;
+    font-size: 50%;
+    background: green;
+}
+
+
+/* Aplicando Ancho & Alto al Modelo de Caja (unidades Absolutas, Relativas, Porcentaje)
+
+    Modelo_Caja.html
+*/
+.parrafo1{
+    background: purple;
+    width: 1085px;
+    height: 50px;
+}
+
+.parrafo2{
+    background: maroon;
+    width: 100%;
+    height: 50px;
+}
+
+.parrafo3{
+    background: chocolate;
+    font-size: 16px;
+    width: 20em; 
+}
+
+/*  Propiedad Display:  block, inline, inline-block, none, etc...*/
+
+
+.cajita1{
+    width: 400px;
+    height: 100px;
+    background:yellow ;
+    padding: 20px;
+    border:20px solid blue;
+    text-align: center;
+    color: black;
+}
+
+
+/* Capitulo #22 Modelo de Caja: Bordes  (solid, double, dotted, dashed, none) */
+.cajita2{
+    width:400px;
+    height:100px;
+    background:tomato;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-top:5px solid red;
+    border-right:15px double blue ;
+    border-bottom: 8px dashed purple;
+    border-left:10px dotted green ;
+    display: inline-block;
+}
+
+.cajita3{
+    width:400px;
+    height:100px;
+    background: green;
+    display:inline-block;
+    border:10px double rgb(255,0,0);
+    /*  Lo mismo seria si aplico las propiedades por separado: 
+    border-width: 10px;
+    border-style: solid;
+    border-color:red;
+    
+    */
+    margin-top:30px;
+}
+
+.cajita4{
+    margin-top: 20px;
+    background: olivedrab;
+    width: 200px;
+    height: 50px;
+}
+
+.span1{
+    background: red;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*
+    margin-top, margin-bottom:  no funcionan con elementos que la propiedad Display sea: inline
+    
+    */
+}
+
+.span2{
+    background: lightseagreen;
+    margin-right: -20px;  /* Los valores negativos en (right, left) los permite para los elementos cuyo valor de 
+    Display= inline,inline-block 
+    Display= inline, es por defecto asignado a <span>. por lo cual las propiedades (Top, Bottom) no se le puede 
+    asignar un valor.
+    */
+}
+
+.span3{
+    background-color: blueviolet;
+}
+
+/* Capitulo #24, Posicionamiento en CSS: static, relative, absolute, fixed, float*/ 
+
+.cajita5{
+    position: static; /*  Por defecto es "static" para un Elemento <Div>. por cual las propiedades
+                        (Top, right, bottom, left) no tienen ningun Efecto.  */
+    top:50px;
+    right:50px;
+    bottom:50px;
+    left:50px;
+}
+
+
+.titulo{
+    background: gold;
+}
+
+.descripcion{
+    background: green;
+    position: relative;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left:40px;
+
+    /* Las propiedad Top, Left prevalecen, es decir si los valores llegan a ser iguales, la prioridad la tiene
+       Top, Left*/
+       
+}
+
+.autor{
+    background: purple;
+}
+
+
+
+/*  TIPOGRAFIA: font (family, weight, style), line-height, font  
+
+    Propiedad font-weight: Valores pueden ser entre 100-900 en intervalos de 100, tambien Keywords: normal, bold 
+    Valores Relativos: bolder, lighter*/
+
+    /*Algunos Keyword de la propiedad "font" son: caption, icon, menu, message, box, small-caption, status-bar*/
+
+.tipografia{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    line-height: normal;
+}
+
+.tipofont{
+    font: bold oblique 16px/2 Verdana;   
+
+}
+
+
+/* Listas Ordenadas, Desordenadas, Descriptivas, list-style*/
+
+
+li{
+    
+     list-style-type: decimal-leading-zero; 
+
+    /* list-style-image: url(https://devcode.la/static/arrow.png);*/
+    /* list-style-position: outside o inside*/
+
+    /* Propiedad resumida (shorthand), en el caso que falle el URL entonces inserte un "Cuadrado"*/
+    /* list-style: url(https://devcode.la/static/arrow.png) square; */
+
+}
+
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slambook</title>
+    <link rel="stylesheet" type="text/css" href="css/styleslambookform.css">
+</head>
+
+
+<body>
+    
+
+
+    <form action="enviar.php" method="POST">
+
+        <h1>Slam Book</h1>
+            <section id="preguntas">
+                <p>
+                    <label for="name"> Nombres y Apellidos:</label>
+                    <input type="text" name="nombres" id="name">
+                </p>  
+
+                <p>
+                    <label for="birth">Fecha de Nacimiento:</label>
+                    <input type="date" name="nacimiento" id="birth">
+                </p>
+
+                <fieldset>
+                    <legend>Sexo:</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sexo" value="hombre" checked >
+                                    Hombres
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sexo" value="mujer" >
+                                    Mujeres
+                                </label>
+                            </li>
+
+                       
+
+                            
+                        </ul>
+
+
+                </fieldset>
+
+                <p>
+                    <label for="phone">Número de Telefono</label>
+                    <input type="tel" name="telefono" id="phone">
+                </p>
+                
+                <p>
+                    <label for="photo">Sube tu foto de perfil</label>
+                    <input type="file" name="foto" id="photo" multiple accept="image/*, video/*">   <!--El atributo multiple, permite seleccionar mas de 1 archivo,
+                                                                              este atributo se puede utilizar en Elementos Input con valor type(file, email)  -->
+                </p>
+
+                <p>
+                    <label for="color">Color favorito</label>
+                    <input type="color" name="color" id="color">
+                </p>
+
+                <p>
+                    <label for="hour">Hora Despertar</label>
+                    <input type="time" name="hora" id="hour">
+                </p>
+
+                <p>
+                    <label for="number">Número favorito</label>
+                    <input type="number" name="numero" id="number" min="4" max="8" step="2">
+                </p>
+
+                <p>
+                    <label for="mydatetimelocal">Fecha y Hora mas importante</label>
+                    <input type="datetime-local" name="fechahora" id="mydatetimelocal">
+                </p>
+
+                <p>
+                    <label for="month">Elige un mes y un año</label>
+                    <input type="month" name="mes" id="month">
+                </p>
+
+                <p>
+                    <label for="week">Semana</label>
+                    <input type="week" name="semana" id="week">
+                </p>
+                
+                <p>
+                    <label for="volume">Volumen favorito</label>
+                    <input type="range" name="volumen" id="volume">
+                </p>
+
+                <fieldset>
+
+                    <ul>
+
+                        <li>
+
+                            <label>
+                                <input type="checkbox" name="confirmacion">
+                                Juro que todas mis respuestas son verdaderas
+                            </label>
+
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="confirmacion">
+                                Acepto que cualquier otro usuario vea mis respuestas...!
+                            </label>
+                        </li>
+
+
+                    </ul>
+
+                </fieldset>
+
+                <input type="hidden" name="idioma" value="spanish">
+
+
+            </section>
+
+            <section id="botones">
+                <p>
+                    <input type="submit">
+                </p>
+
+                <p>
+                    <input type="reset">
+                </p>
+
+
+            </section>
+
+
+    </form>
+
+
+
+</body>
+</html>

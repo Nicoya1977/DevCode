@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+fieldset{
+    width:270px;
+    margin:0 auto;
+    border: none;
+    
+    background-color:white;
+    padding: 0 0 10px 0;
+}
+
+form{
+    background-color: white;
+    width: 270px;
+    padding: 40px 10px 0 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+input{
+    display: block;
+    border: none;
+    margin: 20px auto;
+    width: 270px;
+    background-color:#eaeaea;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+legend{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+    color:#777;
+}
+
+input[type="submit"]{
+    background-color: mediumseagreen;
+    color:white ;
+    cursor:pointer;
+}
